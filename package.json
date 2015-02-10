@@ -1,0 +1,25 @@
+{
+  "name": "canvas-linearlinechart",
+  "version": "1.0.0",
+  "description": "linear canvas chart",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mapbox/canvas-linearlinechart.git"
+  },
+  "keywords": [
+    "canvas",
+    "linear",
+    "line",
+    "chart"
+  ],
+  "author": "Eden Halperin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mapbox/canvas-linearlinechart/issues"
+  },
+  "homepage": "https://github.com/mapbox/canvas-linearlinechart"
+}
