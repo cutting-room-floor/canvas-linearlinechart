@@ -31,8 +31,8 @@ function canvasLinearLineChart(c, width, data, marker) {
   }
 
   // draw the data line
-  ctx.strokeStyle = '#777';
-  ctx.lineWidth = 6;
+  ctx.strokeStyle = '#ccc';
+  ctx.lineWidth = 10;
   ctx.moveTo(0, 18);
   ctx.lineTo(xScale(21), 18);
   ctx.stroke();
