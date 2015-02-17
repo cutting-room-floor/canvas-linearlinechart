@@ -60,8 +60,11 @@ function canvasLinearLineChart(c, width, data, marker) {
 
   if (marker) {
     var xAnchor = xScale(marker[0]);
-    if (xAnchor < 20) xAnchor = 20;
-    if (xAnchor > (width - 20)) xAnchor = width - 20;
+    var labelWidth = marker[1].length * 12;
+    var labelWidthH = labelWidth / 2;
+
+    if (xAnchor < labelWidthH) xAnchor = labelWidthH;
+    if (xAnchor > (width - labelWidthH)) xAnchor = width - labelWidthH;
     ctx.fillStyle = '#3bb2d0';
     ctx.font = 'bold 20px monospace';
     ctx.textAlign = 'center';
