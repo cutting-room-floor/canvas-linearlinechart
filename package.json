@@ -1,6 +1,6 @@
 {
   "name": "canvas-linearlinechart",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "linear canvas chart",
   "main": "index.js",
   "scripts": {
