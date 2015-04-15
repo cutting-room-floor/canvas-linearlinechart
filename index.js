@@ -38,7 +38,7 @@ function canvasLinearLineChart(c, width, data, marker) {
   ctx.stroke();
 
   if (marker) {
-    ctx.fillStyle = '#3bb2d0';
+    ctx.fillStyle = '#ddd';
     ctx.fillRect(xScale(marker[0]), 0, 3, chartHeight + margin);
   }
 
@@ -49,7 +49,7 @@ function canvasLinearLineChart(c, width, data, marker) {
     ctx.strokeStyle = '#777';
     var r = 5;
     if (data[2] && data[2].focus) {
-      ctx.strokeStyle = '#3bb2d0';
+      ctx.strokeStyle = '#ddd';
       r = 6;
     }
     if (!data[2] || !data[2].end) ctx.arc(xScale(data[0]), 18, r, 0, 2 * Math.PI, false);
@@ -65,7 +65,7 @@ function canvasLinearLineChart(c, width, data, marker) {
 
     if (xAnchor < labelWidthH) xAnchor = labelWidthH;
     if (xAnchor > (width - labelWidthH)) xAnchor = width - labelWidthH;
-    ctx.fillStyle = '#3bb2d0';
+    ctx.fillStyle = '#ddd';
     ctx.font = 'bold 20px monospace';
     ctx.textAlign = 'center';
     ctx.fillText('' + marker[1], xAnchor, chartHeight + 26);
